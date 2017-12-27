@@ -1,5 +1,63 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<nav class="top-bar">
+  <h1>Goals</h1>
+  <ul class="nav-list">
+    <li>login</li>
+  </ul>
+</nav>
 
-{{outlet}}
+<main>
+  <section>
+    <h2>Weekly Goals</h2>
+    <ul class="collection">
+      <li class="goal">
+        <div class="goal__top">
+          <h3>
+            Pushups
+          </h3>
+          <p>
+            Goal 25/week
+          </p>
+        </div>
+        <div class="goal__bottom">
+          <p>10/25</p>
+          <p>Complete 10 wks</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>January Goals</h2>
+    <ul class="collection">
+      <li class="goal">
+        <div class="goal__top">
+          <h3>
+            Build Portfolio
+          </h3>
+          <p>
+            Complete
+          </p>
+        </div>
+        <div class="goal__bottom">
+          <p></p>
+          <p>Completed Jan 12th</p>
+        </div>
+      </li>
+
+      <li class="goal">
+        <div class="goal__top">
+          <h3>
+            Brush Teeth
+          </h3>
+          <p>
+            Goal 30
+          </p>
+        </div>
+        <div class="goal__bottom">
+          <p>20/30</p>
+          <p>Last Completed Yesterday</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</main>
