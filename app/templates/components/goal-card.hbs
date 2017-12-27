@@ -1,0 +1,32 @@
+<li class="goal">
+  <div class="goal__top">
+    <h3>{{name}}</h3>
+    <p>
+      {{#if completed}}
+        Completed
+      {{else if (eq type "week")}}
+        Goal {{goalQuantity}}/week
+      {{else if goalQuantity}}
+        Goal {{goalQuantity}}
+      {{else}}
+        Incomplete
+      {{/if}}
+    </p>
+  </div>
+  <div class="goal__bottom">
+    <p>
+      {{#if goalQuantity}}
+        {{completedQuantity}}/{{goalQuantity}}
+      {{/if}}
+    </p>
+    <p>
+      {{#if (eq type "week")}}
+        Complete {{completedWeeks}} wks
+      {{else if completed}}
+        {{completedDate}}
+      {{else if goalQuantity}}
+        Last Completed Yesterday
+      {{/if}}
+    </p>
+  </div>
+</li>

@@ -9,55 +9,16 @@
   <section>
     <h2>Weekly Goals</h2>
     <ul class="collection">
-      <li class="goal">
-        <div class="goal__top">
-          <h3>
-            Pushups
-          </h3>
-          <p>
-            Goal 25/week
-          </p>
-        </div>
-        <div class="goal__bottom">
-          <p>10/25</p>
-          <p>Complete 10 wks</p>
-        </div>
-      </li>
+      {{goal-card name="Pushups" completedQuantity=10 goalQuantity=25 type="week" completedWeeks=5}}
     </ul>
   </section>
 
   <section>
     <h2>January Goals</h2>
     <ul class="collection">
-      <li class="goal">
-        <div class="goal__top">
-          <h3>
-            Build Portfolio
-          </h3>
-          <p>
-            Complete
-          </p>
-        </div>
-        <div class="goal__bottom">
-          <p></p>
-          <p>Completed Jan 12th</p>
-        </div>
-      </li>
+      {{goal-card name="Build Portfolio" completed=true completedDate="January 12th, 2018"}}
 
-      <li class="goal">
-        <div class="goal__top">
-          <h3>
-            Brush Teeth
-          </h3>
-          <p>
-            Goal 30
-          </p>
-        </div>
-        <div class="goal__bottom">
-          <p>20/30</p>
-          <p>Last Completed Yesterday</p>
-        </div>
-      </li>
+      {{goal-card name="Brush Teeth" completedQuantity=20 goalQuantity=30}}
     </ul>
   </section>
 </main>
