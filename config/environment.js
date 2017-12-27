@@ -1,8 +1,16 @@
 /* eslint-env node */
 'use strict';
+require('dotenv').config();
 
 module.exports = function(environment) {
   let ENV = {
+    firebase: {
+      apiKey: process.FIREBASE_API_KEY,
+      authDomain: process.FIREBASE_AUTH_DOMAIN,
+      databaseURL: process.FIREBASE_DATABASE_URL,
+      storageBucket: process.FIREBASE_STORAGE_BUCKET,
+    },
+
     modulePrefix: 'goal-app',
     environment,
     rootURL: '/',
